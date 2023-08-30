@@ -28,6 +28,7 @@ amd64		default/linux/amd64/17.1/selinux				stable
 amd64		default/linux/amd64/17.1/hardened				stable
 amd64		default/linux/amd64/17.1/hardened/selinux			stable
 amd64		default/linux/amd64/17.1/desktop				stable
+amd64		default/linux/amd64/17.1/desktop/clang				exp
 amd64		default/linux/amd64/17.1/desktop/gnome				stable
 amd64		default/linux/amd64/17.1/desktop/gnome/systemd			stable
 amd64		default/linux/amd64/17.1/desktop/gnome/systemd/merged-usr	stable
@@ -36,6 +37,7 @@ amd64		default/linux/amd64/17.1/desktop/plasma/systemd			stable
 amd64		default/linux/amd64/17.1/desktop/plasma/systemd/merged-usr	stable
 amd64		default/linux/amd64/17.1/desktop/systemd			stable
 amd64		default/linux/amd64/17.1/desktop/systemd/merged-usr		stable
+amd64		default/linux/amd64/17.1/desktop/systemd/merged-usr/clang	exp
 amd64		default/linux/amd64/17.1/developer				exp
 amd64		default/linux/amd64/17.1/no-multilib				stable
 amd64		default/linux/amd64/17.1/no-multilib/hardened			stable
@@ -348,6 +350,8 @@ amd64		default/linux/amd64/17.0/musl					dev
 amd64		default/linux/amd64/17.0/musl/clang				exp
 amd64		default/linux/amd64/17.0/musl/hardened				exp
 amd64		default/linux/amd64/17.0/musl/hardened/selinux			exp
+amd64		default/linux/amd64/17.0/musl/desktop				exp
+amd64		default/linux/amd64/17.0/musl/desktop/clang			exp
 arm		default/linux/arm/17.0/musl/armv6j				dev
 arm		default/linux/arm/17.0/musl/armv6j/hardened			exp
 arm		default/linux/arm/17.0/musl/armv6j/hardened/selinux		exp
