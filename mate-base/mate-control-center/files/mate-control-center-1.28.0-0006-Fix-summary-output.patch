@@ -1,0 +1,26 @@
+From d7f3c6235a8caba9e372c51bb3e0306be1fa240b Mon Sep 17 00:00:00 2001
+From: Oz Tiram <oz.tiram@gmail.com>
+Date: Wed, 6 Mar 2024 23:04:20 +0100
+Subject: [PATCH 6/7] Fix summary output
+
+Signed-off-by: Oz Tiram <oz.tiram@gmail.com>
+---
+ configure.ac | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/configure.ac b/configure.ac
+index 6440992..7a5ac8a 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -327,7 +327,7 @@ Configure summary:
+ 
+         Ayatana AppIndicator (preferred)   $(test "x$enable_appindicator" = xyes && echo no || echo yes)
+         Ubuntu AppIndicator (legacy)       $(test "x$enable_appindicator" = xyes && echo yes || echo no)
+-	Systemd:                           $(test "x$enable_systemd" = xyes && echo yes || echo no)
++	Systemd:                           ${have_systemd}
+ 
+         Accountsservice:           ${have_accountsservice}
+         Native Language support:   ${USE_NLS}
+-- 
+2.43.2
+

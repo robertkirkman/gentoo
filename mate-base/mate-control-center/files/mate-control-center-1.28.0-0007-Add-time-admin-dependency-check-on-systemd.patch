@@ -1,0 +1,34 @@
+From 9c2e88747e09882537a7ca9b759fdaf37a42a2c2 Mon Sep 17 00:00:00 2001
+From: zhuyaliang <15132211195@163.com>
+Date: Wed, 27 Mar 2024 11:35:09 +0800
+Subject: [PATCH 7/7] Add time-admin dependency check on systemd time-admin
+ depends on systemd. If systemd is not used in the systemd, time-admin is
+ disabled
+
+---
+ capplets/Makefile.am | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/capplets/Makefile.am b/capplets/Makefile.am
+index 017bdea..cf6de1b 100644
+--- a/capplets/Makefile.am
++++ b/capplets/Makefile.am
+@@ -8,11 +8,14 @@ SUBDIRS = \
+ 	keybindings \
+ 	mouse \
+ 	network \
+-	time-admin \
+ 	windows \
+ 	about-me \
+ 	system-info
+ 
++if HAVE_SYSTEMD
++SUBDIRS += time-admin
++endif
++
+ DIST_SUBDIRS = \
+ 	common \
+ 	accessibility \
+-- 
+2.43.2
+

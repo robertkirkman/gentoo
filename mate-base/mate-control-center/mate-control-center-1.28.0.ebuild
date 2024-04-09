@@ -63,9 +63,18 @@ BDEPEND="${COMMON_DEPEND}
 	virtual/pkgconfig
 "
 
+PATCHES=(
+	"${FILESDIR}"/${P}-0002-Make-systemd-optional.patch
+	"${FILESDIR}"/${P}-0003-Disable-function-definitions-if-systemd-isn-t-found.patch
+	"${FILESDIR}"/${P}-0004-Enable-systemd-by-default.patch
+	"${FILESDIR}"/${P}-0006-Fix-summary-output.patch
+	"${FILESDIR}"/${P}-0007-Add-time-admin-dependency-check-on-systemd.patch
+)
+
 src_configure() {
 	mate_src_configure \
 		--disable-update-mimedb \
+		$(use_enable systemd) \
 		$(use_enable appindicator) \
 		$(use_enable nls) \
 		$(use_enable debug)
