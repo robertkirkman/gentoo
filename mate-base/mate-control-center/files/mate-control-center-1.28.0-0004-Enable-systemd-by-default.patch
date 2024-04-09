@@ -8,8 +8,6 @@ Signed-off-by: Oz Tiram <oz.tiram@gmail.com>
  configure.ac | 29 +++++++++++++++--------------
  1 file changed, 15 insertions(+), 14 deletions(-)
 
-diff --git a/configure.ac b/configure.ac
-index 45d5365..6440992 100644
 --- a/configure.ac
 +++ b/configure.ac
 @@ -167,20 +167,6 @@ AC_ARG_ENABLE([libappindicator],

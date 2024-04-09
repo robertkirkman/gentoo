@@ -8,8 +8,6 @@ Signed-off-by: Oz Tiram <oz.tiram@gmail.com>
  configure.ac | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-diff --git a/configure.ac b/configure.ac
-index 6440992..7a5ac8a 100644
 --- a/configure.ac
 +++ b/configure.ac
 @@ -327,7 +327,7 @@ Configure summary:

@@ -8,8 +8,6 @@ Signed-off-by: Oz Tiram <oz.tiram@gmail.com>
  capplets/system-info/mate-system-info.c | 23 ++++++++++++++++-------
  1 file changed, 16 insertions(+), 7 deletions(-)
 
-diff --git a/capplets/system-info/mate-system-info.c b/capplets/system-info/mate-system-info.c
-index 180cdf3..00b0d8a 100644
 --- a/capplets/system-info/mate-system-info.c
 +++ b/capplets/system-info/mate-system-info.c
 @@ -132,13 +132,15 @@ static void

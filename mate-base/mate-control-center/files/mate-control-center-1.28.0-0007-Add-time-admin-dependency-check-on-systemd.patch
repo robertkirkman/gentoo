@@ -9,8 +9,6 @@ Subject: [PATCH 7/7] Add time-admin dependency check on systemd time-admin
  capplets/Makefile.am | 5 ++++-
  1 file changed, 4 insertions(+), 1 deletion(-)
 
-diff --git a/capplets/Makefile.am b/capplets/Makefile.am
-index 017bdea..cf6de1b 100644
 --- a/capplets/Makefile.am
 +++ b/capplets/Makefile.am
 @@ -8,11 +8,14 @@ SUBDIRS = \
